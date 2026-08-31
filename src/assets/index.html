@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="icon" href="n1.png">
+  <link rel="icon" href="n1.png">
+  <title>SPARK - THE WORLD OF CAKES</title>
+
+
+</head>
+<style>
+  span {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+
+
+  }
+
+  nav {
+    background-color: palevioletred;
+    color: rgb(105, 45, 3);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1605px;
+    height: 60px;
+    z-index: 10;
+  }
+
+  nav ol {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    float: right;
+    position: relative;
+    left: 350px;
+    bottom: 0px;
+    top: 5px;
+  }
+
+  nav ol li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(105, 45, 3);
+
+  }
+
+  nav ol li a:hover {
+    color: white;
+  }
+
+  .back {
+    position: relative;
+  }
+
+  .front {
+    display: flex;
+    gap: 200px;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    animation-name: home;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .home table td {
+    padding-left: 100px;
+    padding-bottom: 50px;
+    content-visibility: visible;
+
+  }
+
+  .home {
+    z-index: 7;
+    position: absolute;
+    top: 1300px;
+  }
+
+  .eg table td {
+    content-visibility: hidden;
+
+
+  }
+
+  .eg h5 {
+    font-size: 15px;
+  }
+
+  .eg .card img {
+    width: 150px;
+    font-size: 5px;
+  }
+
+  @keyframes home {
+    0% {
+
+      transform: scale3d();
+      opacity: 80%;
+    }
+
+    100% {
+      left: 120px;
+      transform: scale3d(1.1, 1.1, 1.1);
+      gap: 50px;
+    }
+  }
+
+  .ph a {
+    display: flex;
+    font-size: 25px;
+    gap: 100px;
+
+    color: black;
+    text-decoration: none;
+  }
+
+  .ph a .s p {
+    opacity: 100%;
+  }
+
+  .ph h2 {
+    font-size: 80px;
+  }
+
+  .ph a:hover {
+    background-color: rgb(239, 237, 237);
+    font-size: 30px;
+
+  }
+
+  #cat .btn {
+    background-color: pink;
+  }
+
+  .eg .btn {
+    background-color: pink;
+
+  }
+
+  .g {
+    background-image: url(b2.avif);
+    width: 1700px;
+    height: 1500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  nav .btn {
+    content-visibility: hidden;
+  }
+
+  .fot {
+    background-color: palevioletred;
+    width: 1550px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    height: 800px;
+    align-content: center;
+    justify-content: center;
+    padding-top: 150px;
+  }
+
+  .fot img {
+    height: 300px;
+    width: 250px;
+  }
+
+  .fot span {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: chocolate;
+    font-size: 50px;
+    width: 500px;
+
+
+  }
+
+  .fot ol {
+    font-size: 25px;
+    list-style: none;
+    list-style: circle;
+    color: white;
+  }
+
+  .f1 {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    bottom: 350px;
+  }
+
+  .f2 {
+
+    position: relative;
+    bottom: 300px;
+    font-size: 30px;
+  }
+
+  .f1 img {
+    width: 150px;
+    margin-top: 50px;
+  }
+
+  .im article {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(241, 223, 188);
+    text-align: center;
+    font-style: oblique;
+    position: relative;
+    bottom: 40px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+  }
+
+  .im {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width:768px) {
+    span {
+      font-family: "Nosifer", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      font-style: normal;
+      color: whitesmoke;
+
+
+    }
+
+    .g {
+      background-image: url(b2.avif);
+      width: 1500px;
+      height: 1900px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    nav {
+      height: 40px;
+    }
+
+    .nav h1 {
+      font-size: 22px;
+
+    }
+
+    nav .btn {
+      content-visibility: visible;
+
+      bottom: 5px;
+      left: 1px;
+      position: absolute;
+
+    }
+
+    nav ol {
+      list-style: none;
+      display: flex;
+      gap: 70px;
+      float: right;
+      position: relative;
+      left: 350px;
+      bottom: 0px;
+      top: 5px;
+      content-visibility: hidden;
+    }
+
+    nav ol li a {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(105, 45, 3);
+
+    }
+
+    nav ol li a:hover {
+      color: white;
+    }
+
+    .back {
+      position: relative;
+    }
+
+    .front {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      animation-name: home;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+
+    }
+
+    .front img {
+      width: 400px;
+      height: 230px;
+
+    }
+
+    .home table td {
+      padding-left: 100px;
+      padding-bottom: 50px;
+
+    }
+
+    .eg h5 {
+      font-size: 15px;
+    }
+
+    .eg .card img {
+      width: 150px;
+      font-size: 5px;
+    }
+
+    @keyframes home {
+      0% {
+
+        transform: scale3d();
+        opacity: 80%;
+      }
+
+      100% {
+        left: 10px;
+        transform: scale3d(1.1, 1.1, 1.1);
+        gap: 25px;
+      }
+    }
+
+    .ph a {
+      display: flex;
+      font-size: 10px;
+      gap: 10px;
+
+      background-color: rgb(239, 237, 237);
+      color: black;
+      text-decoration: none;
+    }
+
+    .ph a .s p {
+      opacity: 100%;
+    }
+
+    .ph h2 {
+      font-size: 20px;
+    }
+
+    .ph a img {
+      width: 150px;
+
+    }
+
+    #cat {
+      background-color: pink;
+      content-visibility: hidden;
+    }
+
+    .eg .btn {
+      background-color: pink;
+
+    }
+
+    .eg table td {
+
+      content-visibility: visible;
+      padding-left: 20px;
+      padding-bottom: 20px;
+
+
+    }
+
+    .im article {
+      font-size: 25px;
+      font-weight: bolder;
+      color: rgb(241, 223, 188);
+      text-align: center;
+      font-style: oblique;
+      position: relative;
+      bottom: 40px;
+      right: 600px;
+
+
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+
+    }
+
+    .im {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      margin-bottom: 50px;
+    }
+
+    .fot {
+      background-color: palevioletred;
+      width: 1550px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-left: 25px;
+      height: 1300px;
+      padding-bottom: 600px;
+    }
+
+    .fot img {
+      height: 400px;
+      width: 350px;
+      position: relative;
+      left: 600px;
+    }
+
+    .fot span {
+      font-family: "Nosifer", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: chocolate;
+      font-size: 35px;
+      width: 400px;
+
+
+    }
+
+    .fot ol {
+      font-size: 20px;
+      list-style: none;
+      list-style: circle;
+      color: white;
+    }
+
+    .f1 {
+      display: grid;
+      grid-template-columns: auto auto;
+      row-gap: 25px;
+      position: relative;
+      bottom: 500px;
+    }
+
+    .f2 {
+
+      position: relative;
+      bottom: 500px;
+      color: white;
+      font-size: 30px;
+    }
+
+    .f1 img {
+      width: 150px;
+    }
+  }
+</style>
+
+<body>
+  <nav>
+    <div class="nav">
+      <h1>SP<span>ARK</span>-THE WORLD OF CAKES</h1>
+      <div class="dropdown">
+        <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="menu.png" width="25px">
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="index.html">Home</a></li>
+          <li><a class="dropdown-item" href="#cat">Categories</a></li>
+          <li><a class="dropdown-item" href="about.html">About</a></li>
+          <li><a class="dropdown-item" href="help.html">Help</a></li>
+        </ul>
+      </div>
+      <div class="nav1">
+        <ol>
+          <li><a href="index.html">home</a></li>
+          <li><a href="#cat">categories</a></li>
+
+          <li><a href="about.html">about</a></li>
+
+
+          <li><a href="help.html">help</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </nav>
+  <div class="back"><img src="home1.jpg" width="1550px"></div>
+  <div class="front">
+    <a href="elite.html">
+      <img src="elite.jpg" width="650px">
+    </a>
+    <a href="mid.html">
+      <img src="cust1.png">
+    </a>
+  </div>
+  <br>
+  <div class="ph">
+    <a href="photo.html">
+      <img src="photo.png" width="450px">
+      <div class="s">
+        <p>
+        <h2>PHOTO PRINTED CAKES</h2>
+        <br>
+        FREEZE YOUR FAVORITE MOVEMENT ON CAKE AND CELEBRATE WITH IT</p>
+      </div>
+    </a>
+  </div>
+  <br>
+  <div class="g">
+    <div class="home" id="cat">
+      <table>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RIBBON CAKE 1KG AT<br>Rs.450</h5>
+                <a href="h1.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PINK BEAUTY 1KG AT<br>Rs.550</h5>
+                <a href="h2.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BLEND WITH NATURE 1.5KG AT Rs.500</h5>
+                <a href="h3.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h4.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FLORAL CAKE 1KG AT<BR>Rs.500</h5>
+                <a href="h4.html" class="btn">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h5.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SPECIALLY MADE FOR CRICKET LOVERS 2KG AT<br>Rs.600</h5>
+                <a href="h5.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h6.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RED VELVET WITH WHITE COATING 1KG AT<br>Rs.700</h5>
+                <a href="h6.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h7.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SPIDER-MAN SPECIAL 2.5KGS AT Rs.650</h5>
+                <a href="h7.html" class="btn">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h8.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ANIVERSARY SPECIAL 1.5KG AT Rs.600</h5>
+                <a href="h8.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h9.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BROWNIE BLAST 2KG AT<BR> Rs.800</h5>
+                <a href="h9.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h10.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MARINE BEAUTY 1KG AT<BR>Rs.350</h5>
+                <a href="h10.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          <td>
+            <div class="card">
+              <img src="h11.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SIMPLE VALENTINES DAY 1KG AT Rs.900</h5>
+                <a href="h11.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="h12.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">6 CUP CAKES WITH 6 EMOTIONS RS.1000</h5>
+                <a href="h12.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          </td>
+
+        </tr>
+      </table>
+    </div>
+    <div class="eg">
+      <table>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RIBBON CAKE 1KG AT Rs.450</h5>
+                <a href="h1.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PINK BEAUTY 1KG AT<br>
+                  Rs.550</h5>
+                <a href="h2.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BLEND WITH NATURE 1.5KG AT Rs.500
+                </h5>
+                <a href="h3.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h4.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FLORAL CAKE 1KG AT
+                  Rs.500</h5>
+                <a href="h4.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h5.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SPECIALLY MADE FOR CRICKET LOVERS 2KG AT
+                  Rs.600</h5>
+                <a href="h5.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h6.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RED VELVET WITH WHITE COATING 1KG AT
+                  Rs.700</h5>
+                <a href="h6.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h7.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SPIDER-MAN SPECIAL 2.5KGS AT Rs.650
+                </h5>
+                <a href="h7.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h8.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ANIVERSARY SPECIAL 1.5KG AT Rs.600</h5>
+                <a href="h8.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h9.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BROWNIE BLAST 2KG AT
+                  Rs.800
+                </h5>
+                <a href="h9.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h10.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MARINE BEAUTY 1KG AT
+                  Rs.350</h5>
+                <a href="h10.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h11.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SIMPLE VALENTINES DAY 1KG AT Rs.900</h5>
+                <a href="h11.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="card" style="width: 150px;">
+              <img src="h12.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">6 CUP CAKES WITH 6 EMOTIONS RS.1000
+                </h5>
+                <a href="h12.html" class="btn ">BUY NOW</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <fotter>
+    <div class="fot">
+      <span>WHERE EVERY SLICE TELLS A STORY</span>
+      <div class="im">
+
+        <article>FOR CONTACT<img src="qr.png"> SCAN ME </article>
+
+      </div>
+    </div>
+    <div class="f2">
+      ASSOCIATE PARTNERS:
+    </div>
+    <div class="f1">
+      <img src="f1.png"><img src="f2.png"><img src="f3.jpg"><img src="f4.png">
+    </div>
+  </fotter>
+</body>
+
+</html>

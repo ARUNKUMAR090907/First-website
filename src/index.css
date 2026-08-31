@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-spark: #C51944;
+  --primary-hover: #A31336;
+  --secondary-spark: #F9526E;
+  --accent-gold: #F59E0B;
+  --accent-gold-hover: #D97706;
+  --dark-chocolate: #2C130D;
+  --bg-cream: #FFFDF9;
+  --card-bg: #FFFFFF;
+  --text-main: #1F2937;
+  --text-muted: #6B7280;
+  --border-light: #F3E8EE;
+  --shadow-sm: 0 4px 6px -1px rgba(197, 25, 68, 0.08);
+  --shadow-lg: 0 15px 25px -5px rgba(197, 25, 68, 0.15);
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  background-size: cover;
+  overflow-x: hidden;
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Layout Wrapper */
+.spark-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Glassmorphic Navbar */
+header.glass-nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+  background: #d5032653;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(249, 82, 110, 0.15);
+}
+
+header.glass-nav .spark-container {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* Card Styling */
+.spark-card {
+  background: #ffffff8c;
+  border-radius: 18px;
+  border: 1px solid rgb(243, 232, 238);
+  box-shadow: 0 8px 20px rgba(221, 0, 107, 0.215);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  height: 470px;
+}
+
+.spark-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 32px rgba(197, 25, 68, 0.12);
+  border-color: rgba(249, 82, 110, 0.3);
+}
+
+/* Buttons */
+.spark-btn-primary {
+  background: linear-gradient(135deg, var(--primary-spark), var(--secondary-spark));
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 22px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(197, 25, 68, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.spark-btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary-spark));
+  box-shadow: 0 6px 18px rgba(197, 25, 68, 0.38);
+  transform: translateY(-2px);
+  color: #FFFFFF !important;
+}
+
+.nosifer-regular, .n1{
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Catalog Grid Background */
+#back {
+  background-image: url('./assets/b2.avif');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 40px 24px 80px 24px !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 24px !important;
+  row-gap: 32px !important;
+  box-sizing: border-box !important;
+  border-radius: 20px;
+}
+
+.spark-btn-gold {
+  background: linear-gradient(135deg, var(--accent-gold), #FBBF24);
+  color: #2C130D !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 22px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.spark-btn-gold:hover {
+  background: linear-gradient(135deg, var(--accent-gold-hover), var(--accent-gold));
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.45);
+  transform: translateY(-2px);
+  color: #2C130D !important;
+}
+
+.spark-btn-outline {
+  background: transparent;
+  color: var(--primary-spark) !important;
+  border: 2px solid var(--primary-spark);
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 8px 20px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.spark-btn-outline:hover {
+  background: rgba(197, 25, 68, 0.08);
+  border-color: var(--primary-hover);
+  color: var(--primary-hover) !important;
+}
+
+/* Badges */
+.badge-spark {
+  background: rgba(197, 25, 68, 0.1);
+  color: var(--primary-spark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-gold {
+  background: rgba(245, 158, 11, 0.15);
+  color: #B45309;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Catalog Grid Container */
+.cake-grid-container {
+  width: 100%;
+}
+
+/* Customizer Grid */
+.customizer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* SVG Star Rating Utility */
+.rating-stars {
+  color: #F59E0B;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ==========================================================================
+   HERO CAROUSEL GLASSMORPHISM & RESPONSIVE STYLES
+   ========================================================================== */
+
+#heroCarousel {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  height: 620px !important;
+  border-radius: 24px !important;
+}
+
+#heroCarousel .carousel-inner {
+  height: 100% !important;
+  border-radius: 24px !important;
+}
+
+#heroCarousel .carousel-item {
+  height: 620px !important;
+}
+
+#heroCarousel .carousel-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#heroCarousel .carousel-caption {
+  bottom: 8% !important;
+  left: 6% !important;
+  right: 6% !important;
+  padding: 24px 28px !important;
+  background: rgba(255, 255, 255, 0) !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.071) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4) !important;
+  max-width: 650px !important;
+  margin: 0 !important;
+  top: auto !important;
+}
+
+#heroCarousel .hero-carousel-title {
+  font-size: 2.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+}
+
+#heroCarousel .hero-carousel-desc {
+  font-size: 1.05rem !important;
+  opacity: 0.95 !important;
+  margin-bottom: 20px !important;
+  line-height: 1.5 !important;
+}
+
+#heroCarousel .carousel-indicators {
+  bottom: 12px !important;
+  z-index: 5 !important;
+}
+
+#heroCarousel .carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  margin: 0 6px !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border: 2px solid rgba(0,0,0,0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+#heroCarousel .carousel-indicators button.active {
+  width: 32px !important;
+  border-radius: 12px !important;
+  background-color: #F59E0B !important;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES FOR ALL DISPLAY SIZES
+   ========================================================================== */
+
+/* 1. Ultra-Wide & Desktop Displays (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .spark-container {
+    max-width: 1400px;
+  }
+}
+
+/* 2. Standard Laptops & Desktops (1025px - 1439px) */
+@media (max-width: 1439px) and (min-width: 1025px) {
+  .spark-container {
+    max-width: 1200px;
+  }
+  #heroCarousel {
+    height: 540px !important;
+  }
+  #heroCarousel .carousel-item {
+    height: 540px !important;
+  }
+  #heroCarousel .hero-carousel-title {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* 3. Tablets & Small Laptops (769px - 1024px) */
+@media (max-width: 1024px) {
+  .spark-container {
+    padding: 0 16px;
+  }
+  #heroCarousel {
+    height: 460px !important;
+    border-radius: 20px !important;
+  }
+  #heroCarousel .carousel-item {
+    height: 460px !important;
+  }
+  #heroCarousel .carousel-caption {
+    bottom: 6% !important;
+    left: 4% !important;
+    right: 4% !important;
+    padding: 18px 22px !important;
+    max-width: 85% !important;
+  }
+  #heroCarousel .hero-carousel-title {
+    font-size: 1.9rem !important;
+  }
+  #heroCarousel .hero-carousel-desc {
+    font-size: 0.95rem !important;
+    margin-bottom: 14px !important;
+  }
+  .customizer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  #back {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
+    gap: 16px !important;
+    padding: 24px 16px 60px 16px !important;
+  }
+}
+
+/* 4. Large Mobile & Small Tablets (577px - 768px) */
+@media (max-width: 768px) {
+  .nav-desktop-links {
+    display: none !important;
+  }
+  .nav-mobile-toggle {
+    display: block !important;
+  }
+  header.glass-nav .spark-container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  header.glass-nav div[style*="width: 500px"],
+  header.glass-nav div[style*="width:500px"] {
+    width: auto !important;
+    max-width: 70vw !important;
+    left: 0 !important;
+  }
+  header.glass-nav h1.n1 {
+    font-size: 1.35rem;
+  }
+  header.glass-nav span.n1 {
+    font-size: 1.35rem !important;
+  }
+  header.glass-nav span {
+    font-size: 0.82rem !important;
+  }
+  
+  #heroCarousel {
+    height: 420px !important;
+    border-radius: 16px !important;
+  }
+  #heroCarousel .carousel-item {
+    height: 420px !important;
+  }
+  #heroCarousel .carousel-caption {
+    bottom: 6% !important;
+    left: 3% !important;
+    right: 3% !important;
+    padding: 14px 16px !important;
+    max-width: 94% !important;
+    border-radius: 14px !important;
+  }
+  #heroCarousel .hero-carousel-title {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+  #heroCarousel .hero-carousel-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 12px !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  div[style*="height:300px"], div[style*="height: 300px"] {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 20px 16px !important;
+  }
+  
+  .spark-card {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .spark-card .spark-btn-primary {
+    margin-left: 0 !important;
+  }
+
+  #back {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+    gap: 16px !important;
+    padding: 20px 12px 50px 12px !important;
+  }
+
+  footer {
+    padding: 30px 0 20px !important;
+    margin-top: 30px !important;
+  }
+  footer .spark-container > div {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    text-align: center !important;
+  }
+  footer img[src*="qr"] {
+    width: 100% !important;
+    max-width: 220px !important;
+    height: auto !important;
+  }
+}
+
+/* 5. Small Mobile Devices (320px - 576px) */
+@media (max-width: 576px) {
+  
+  header.glass-nav div[style*="width: 500px"],
+  header.glass-nav div[style*="width:500px"] {
+    max-width: 65vw !important;
+  }
+  header.glass-nav h1.n1 {
+    font-size: 2rem !important;
+  }
+  header.glass-nav span.n1 {
+    font-size: 2rem !important;
+  }
+
+  header.glass-nav span.n2 {
+    margin-bottom: -10px;
+  }
+  #but{
+    position: relative;
+    left: 40%;
+  }
+  #heroCarousel {
+    height: 560px !important;
+    margin-top: 250px;
+    padding-top: 50px;
+    border-radius: 14px !important;
+  }
+  #heroCarousel .carousel-item {
+    height: 560px !important;
+
+  }
+  #heroCarousel .carousel-caption {
+    bottom: 20% !important;
+    left: 2% !important;
+    right: 2% !important;
+    padding: 10px 12px !important;
+  }
+  #heroCarousel .hero-carousel-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 4px !important;
+  }
+  #heroCarousel .hero-carousel-desc {
+    font-size: 0.78rem !important;
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
+  }
+
+  #back {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 16px 8px 40px 8px !important;
+  }
+
+  .spark-btn-primary, .spark-btn-gold, .spark-btn-outline {
+    padding: 8px 14px !important;
+    font-size: 0.8rem !important;
+  }
+}

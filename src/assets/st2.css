@@ -1,0 +1,311 @@
+span {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+
+
+}
+
+nav {
+    background-color: palevioletred;
+    color: rgb(105, 45, 3);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1605px;
+    height: 60px;
+    z-index: 10;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    float: right;
+    position: relative;
+    left: 350px;
+    bottom: 0px;
+    top: 5px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(105, 45, 3);
+
+}
+
+nav ol li a:hover {
+    color: white;
+}
+
+nav .btn {
+    content-visibility: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 0px;
+    top: 100px;
+}
+
+.card h5 {
+    font-size: 45px;
+}
+
+.card img {
+    width: 450px;
+}
+
+.ot1 {
+
+    position: absolute;
+    top: 150px;
+    left: 680px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    font-size: 27px;
+
+}
+
+.o1 {
+    width: 20px;
+    height: 25px;
+    background-color: rgb(1, 118, 15);
+    position: absolute;
+    top: 155px;
+    left: 650px;
+    border-radius: 50%;
+}
+
+.o2 {
+    width: 20px;
+    height: 25px;
+    background-color: rgb(1, 118, 15);
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    border-radius: 50%;
+}
+
+.o3 {
+    width: 20px;
+    height: 25px;
+    background-color: rgb(1, 118, 15);
+    position: absolute;
+    top: 430px;
+    left: 650px;
+    border-radius: 50%;
+}
+
+.o4 {
+    width: 20px;
+    height: 25px;
+    background-color: rgb(1, 118, 15);
+    position: absolute;
+    top: 570px;
+    left: 650px;
+    border-radius: 50%;
+}
+
+#o {
+    position: absolute;
+    top: 190px;
+    left: 685px;
+
+}
+
+.otp1 {
+    width: 10px;
+    height: 145px;
+
+
+    background-image: linear-gradient(rgb(1, 118, 15), rgb(36, 245, 99));
+    position: absolute;
+    top: 157px;
+    left: 655px;
+    animation-name: t;
+    animation-duration: 3s;
+
+
+}
+
+@media screen and (max-width:768px) {
+    span {
+        font-family: "Nosifer", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+        color: whitesmoke;
+
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: 0px;
+        top: 30px;
+    }
+
+    .card h5 {
+        font-size: 35px;
+    }
+
+    .card img {
+        width: 380px;
+    }
+
+    .g {
+        background-image: url(b2.avif);
+        width: 1500px;
+        height: 1900px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav {
+        height: 40px;
+    }
+
+    .nav h1 {
+        font-size: 22px;
+
+    }
+
+    nav .btn {
+        content-visibility: visible;
+
+        bottom: 5px;
+        left: 1px;
+        position: absolute;
+
+    }
+
+    nav ol {
+        list-style: none;
+        display: flex;
+        gap: 70px;
+        float: right;
+        position: relative;
+        left: 350px;
+        bottom: 0px;
+        top: 5px;
+        content-visibility: hidden;
+    }
+
+    nav ol li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(105, 45, 3);
+
+    }
+
+    nav ol li a:hover {
+        color: white;
+    }
+
+    .ot1 {
+
+        position: absolute;
+        top: 540px;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 80px;
+        font-size: 25px;
+
+    }
+
+    .o1 {
+        width: 20px;
+        height: 25px;
+        background-color: rgb(1, 118, 15);
+        position: absolute;
+        top: 550px;
+        left: 10px;
+        border-radius: 50%;
+    }
+
+    .o2 {
+        width: 20px;
+        height: 25px;
+        background-color: rgb(1, 118, 15);
+        position: absolute;
+        top: 680px;
+        left: 10px;
+        border-radius: 50%;
+    }
+
+    .o3 {
+        width: 20px;
+        height: 25px;
+        background-color: rgb(1, 118, 15);
+        position: absolute;
+        top: 820px;
+        left: 10px;
+        border-radius: 50%;
+    }
+
+    .o4 {
+        width: 20px;
+        height: 25px;
+        background-color: rgb(1, 118, 15);
+        position: absolute;
+        top: 950px;
+        left: 10px;
+        border-radius: 50%;
+    }
+
+    #o {
+        position: absolute;
+        top: 580px;
+        left: 50px;
+
+    }
+
+    .otp1 {
+        width: 10px;
+        height: 150px;
+
+
+        background-image: linear-gradient(rgb(1, 118, 15), rgb(36, 245, 99));
+        position: absolute;
+        top: 552px;
+        left: 15px;
+        animation-name: t;
+        animation-duration: 3s;
+
+
+    }
+
+    @keyframes t {
+        0% {
+
+            height: 0px;
+        }
+
+        100% {
+            width: 10px;
+            height: 150px;
+
+
+            background-image: linear-gradient(rgb(1, 118, 15), rgb(36, 245, 99));
+
+        }
+
+    }
+}
