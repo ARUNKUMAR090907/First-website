@@ -126,14 +126,14 @@ export default function Customize() {
             {/* Quick Specs Footer */}
             <div style={{
               display: 'flex',
-              justify: 'space-between',
+              justifyContent: 'space-between',
               alignItems: 'center',
               marginTop: '16px',
               paddingTop: '16px',
               borderTop: '1px solid #F3E8EE',
               flexWrap: 'wrap',
               gap: '12px',
-                          }}>
+            }}>
               <div>
                 <span style={{ fontSize: '0.825rem', color: '#6B7280', display: 'block' }}>Estimated Total:</span>
                 <span style={{ fontSize: '1.75rem', fontWeight: '800', color: '#C51944' }}>Rs.{totalPrice}</span>
@@ -342,7 +342,7 @@ export default function Customize() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className="spark-card"
-            style={{ width: '100%', maxWidth: '520px', padding: '28px', position: 'relative' ,height:"100%"}}
+            style={{ width: '100%', maxWidth: '520px', padding: '28px', position: 'relative', overflowY: 'auto', maxHeight: '90vh' }}
           >
             <button
               onClick={() => setShowModal(false)}

@@ -208,7 +208,7 @@ export default function Cake3D({
 
     if (toppings.macarons) {
       const macGeo = new THREE.SphereGeometry(0.2, 16, 16);
-      macGeo.scale(1, 0.5, 1);
+      macGeo.applyMatrix4(new THREE.Matrix4().makeScale(1, 0.5, 1));
       const macColors = [0xfbcfe8, 0xfef08a, 0xbfdbfe];
 
       for (let i = 0; i < 4; i++) {

@@ -53,7 +53,7 @@ export default function Home() {
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
 
-          <div className=" "  >
+          <div className="carousel-inner">
             {/* Slide 1 */}
             <div className="carousel-item active hero-carousel-height" style={{ height: '100%', position: 'relative' }}>
               <img
@@ -268,7 +268,7 @@ export default function Home() {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '14px',
-          justify: 'space-between',
+          justifyContent: 'space-between',
           alignItems: 'center',
           marginBottom: '24px',
           background: '#FFFFFF',
@@ -401,7 +401,7 @@ export default function Home() {
 
                 <div style={{
                   display: 'flex',
-                  justify: 'space-between',
+                  justifyContent: 'space-between',
                   alignItems: 'center',
                   paddingTop: '10px',
                   borderTop: '1px solid #F3E8EE'

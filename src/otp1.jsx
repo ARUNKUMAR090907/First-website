@@ -1,15 +1,12 @@
 import React from 'react';
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import datas from './data.js';
 import Nav from './nav.jsx';
 import Foot from './foot.jsx';
 import { motion } from 'framer-motion';
 
-function Otp() {
-  const { id } = useParams();
-  
-  const cakeId = Number(id) || 1;
-  const data = datas.find((dat) => dat.id === cakeId) || datas[0];
+function Otp1() {
+  const data = datas[0];
   const orderTime = new Date().toLocaleString('en-US', {
     dateStyle: 'medium',
     timeStyle: 'short'
@@ -27,7 +24,7 @@ function Otp() {
       <Nav />
 
       <div className="spark-container" style={{ paddingTop: '30px', paddingBottom: '60px' }}>
-        
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,7 +47,7 @@ function Otp() {
             padding: '24px',
             marginBottom: '32px',
             background: 'linear-gradient(180deg, #FFFFFF 0%, #FFFDF9 100%)',
-            height:"100%"
+            height: 'auto'
           }}
         >
           <div style={{
@@ -60,25 +57,23 @@ function Otp() {
             alignItems: 'center',
             justifyContent: 'space-between',
             paddingBottom: '20px',
-      
             borderBottom: '1px solid #F3E8EE'
           }}>
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
               <div style={{ width: '85px', height: '85px', borderRadius: '14px', overflow: 'hidden', flexShrink: 0 }}>
+                <img src={data.img} alt={data.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div>
                 <span className="badge-gold">Order #SPK-{8920 + data.id}</span>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: '800', color: '#2C130D', marginTop: '2px' }}>
-                  
+                  {data.name}
                 </h3>
                 <span style={{ fontSize: '0.85rem', color: '#6B7280' }}>
                   Weight: {data.wt} • Total Paid: <strong style={{ color: '#C51944' }}>Rs.{data.pri}</strong>
                 </span>
               </div>
             </div>
-
-      
-                 </div>
+          </div>
 
           <div style={{ marginTop: '24px', padding: '10px 0' }}>
             <h4 style={{ fontSize: '1.05rem', fontWeight: '800', color: '#2C130D', marginBottom: '20px' }}>
@@ -176,4 +171,4 @@ function Otp() {
   );
 }
 
-export default Otp;
+export default Otp1;

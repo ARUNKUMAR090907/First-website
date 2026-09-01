@@ -106,7 +106,7 @@ export default function Help() {
                     width: '100%',
                     padding: '16px 20px',
                     display: 'flex',
-                    justify: 'space-between',
+                    justifyContent: 'space-between',
                     alignItems: 'center',
                     background: 'none',
                     border: 'none',

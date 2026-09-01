@@ -221,7 +221,7 @@ function Prodet() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className="spark-card"
-            style={{ width: "100%", maxWidth: "520px", padding: "28px", position: "relative",height:"100%" }}
+            style={{ width: "100%", maxWidth: "520px", padding: "28px", position: "relative", overflowY: "auto", maxHeight: "90vh" }}
           >
             <button
               onClick={() => setShowModal(false)}

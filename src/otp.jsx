@@ -49,7 +49,7 @@ function Otp() {
             padding: '24px',
             marginBottom: '32px',
             background: 'linear-gradient(180deg, #FFFFFF 0%, #FFFDF9 100%)',
-            height:"100%"
+            height: 'auto'
           }}
         >
           <div style={{
