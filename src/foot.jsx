@@ -62,17 +62,11 @@ function Foot() {
           </div>
 
           {/* Col 3: QR Contact */}
-          <div style={{ textAlign: 'center' }}>
+          <div className="footer-qr-col">
             <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: '#F59E0B', marginBottom: '12px' }}>
               Scan QR for Mobile Order
             </h4>
-            <div style={{
-              background: 'pink',
-              padding: '10px',
-              borderRadius: '12px',
-              display: 'inline-block',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
-            }}>
+            <div className="footer-qr-box">
               <img src={qr} alt="Scan QR Code" className="footer-qr-img" />
             </div>
             <p style={{ fontSize: '0.75rem', color: '#000000', marginTop: '6px' }}>
@@ -82,14 +76,7 @@ function Foot() {
 
           {/* Col 4: Associate Partners */}
           <div>
-            <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: '#F59E0B', marginBottom: '14px' }}>
-              Associate Partners
-            </h4>
-            <div className="footer-partner-logos">
-              <img src={f1} alt="Partner 1" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
-              <img src={f2} alt="Partner 2" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
-              <img src={f3} alt="Partner 3" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
-            </div>
+
             <p style={{ fontSize: '0.825rem', color: '#000000', marginTop: '12px', lineHeight: '1.5' }}>
               Ph.no: 8925100859<br />
               Email: sparkcakes@gmail.com
