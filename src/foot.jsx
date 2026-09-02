@@ -15,7 +15,7 @@ function Foot() {
       borderTop: '3px solid #C51944'
     }}>
       <div className="spark-container">
-        
+
         {/* Multi-Column Grid */}
         <div style={{
           display: 'grid',
@@ -24,11 +24,11 @@ function Foot() {
           paddingBottom: '36px',
           borderBottom: '1px solid rgba(255,255,255,0.1)'
         }}>
-          
+
           {/* Col 1: Brand & Tagline */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-              
+
               <h2 className='n1' style={{ fontSize: '1.8rem', fontWeight: '500', color: '#996909', margin: 0 }}>
                 SPARK
               </h2>

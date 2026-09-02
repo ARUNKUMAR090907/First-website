@@ -102,14 +102,22 @@ header.glass-nav .spark-container {
   width: 320px;
   height: 220px;
   object-fit: contain;
+  display: block;
 }
 
-/* Footer partner logos */
+/* Footer partner logos container */
 .footer-partner-logos {
   display: flex;
   gap: 12px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+/* Footer partner logo images — base size */
+.footer-partner-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /* Buttons */
@@ -414,9 +422,9 @@ header.glass-nav .spark-container {
   }
 
   /* --- Tablet: Footer partner logos --- */
-  .footer-partner-logos img {
-    width: 36px !important;
-    height: 36px !important;
+  .footer-partner-img {
+    width: 38px !important;
+    height: 38px !important;
   }
 }
 
@@ -529,24 +537,18 @@ header.glass-nav .spark-container {
 
   /* --- Mobile: Footer QR image --- */
   .footer-qr-img {
-    width: 100% !important;
-    max-width: 200px !important;
+    width: 180px !important;
     height: auto !important;
-  }
-  /* legacy fallback selector */
-  footer img[src*="qr"] {
-    width: 100% !important;
-    max-width: 200px !important;
-    height: auto !important;
+    margin: 0 auto;
   }
 
   /* --- Mobile: Footer partner logos --- */
   .footer-partner-logos {
     justify-content: center;
   }
-  .footer-partner-logos img {
-    width: 32px !important;
-    height: 32px !important;
+  .footer-partner-img {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
 
@@ -566,10 +568,6 @@ header.glass-nav .spark-container {
 
   header.glass-nav span.n2 {
     margin-bottom: -10px;
-  }
-  #but{
-    position: relative;
-    left: 40%;
   }
   #heroCarousel {
     height: 560px !important;
@@ -626,18 +624,18 @@ header.glass-nav .spark-container {
 
   /* --- Small Mobile: Footer QR image --- */
   .footer-qr-img {
-    width: 100% !important;
-    max-width: 160px !important;
+    width: 150px !important;
     height: auto !important;
+    margin: 0 auto;
   }
 
   /* --- Small Mobile: Footer partner logos --- */
   .footer-partner-logos {
     justify-content: center;
-    gap: 16px !important;
+    gap: 14px !important;
   }
-  .footer-partner-logos img {
-    width: 36px !important;
-    height: 36px !important;
+  .footer-partner-img {
+    width: 40px !important;
+    height: 40px !important;
   }
 }
