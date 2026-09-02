@@ -399,19 +399,13 @@ export default function Home() {
                   {cake.desc}
                 </p>
 
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  paddingTop: '10px',
-                  borderTop: '1px solid #F3E8EE'
-                }}>
+                <div className="card-action-row">
                   <div>
                     <span className="cake-card-price" style={{ fontSize: '1.35rem', fontWeight: '800', color: '#C51944' }}>Rs.{cake.pri}</span>
                     <span style={{ fontSize: '0.78rem', color: '#6B7280', marginLeft: '4px' }}>/ {cake.wt}</span>
                   </div>
 
-                  <Link id='but' to={`/prodet/${cake.id}`} className="spark-btn-primary" style={{ padding: '8px 16px', fontSize: '0.85rem', marginLeft:"125px"}}>
+                  <Link id='but' to={`/prodet/${cake.id}`} className="spark-btn-primary" style={{ padding: '8px 16px', fontSize: '0.85rem' }}>
                     Order Now
                   </Link>
                 </div>

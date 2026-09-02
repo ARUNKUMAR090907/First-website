@@ -88,6 +88,30 @@ header.glass-nav .spark-container {
   border-color: rgba(249, 82, 110, 0.3);
 }
 
+/* Card bottom row: price + buy button */
+.card-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #F3E8EE;
+}
+
+/* QR Code image in footer */
+.footer-qr-img {
+  width: 320px;
+  height: 220px;
+  object-fit: contain;
+}
+
+/* Footer partner logos */
+.footer-partner-logos {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Buttons */
 .spark-btn-primary {
   background: linear-gradient(135deg, var(--primary-spark), var(--secondary-spark));
@@ -368,6 +392,32 @@ header.glass-nav .spark-container {
     gap: 16px !important;
     padding: 24px 16px 60px 16px !important;
   }
+
+  /* --- Tablet: Card buy button --- */
+  .spark-card #but,
+  #but {
+    margin-left: 0 !important;
+    position: static !important;
+    left: auto !important;
+    width: auto !important;
+    flex-shrink: 0;
+  }
+  .card-action-row {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  /* --- Tablet: Footer QR image --- */
+  .footer-qr-img {
+    width: 220px !important;
+    height: 160px !important;
+  }
+
+  /* --- Tablet: Footer partner logos --- */
+  .footer-partner-logos img {
+    width: 36px !important;
+    height: 36px !important;
+  }
 }
 
 /* 4. Large Mobile & Small Tablets (577px - 768px) */
@@ -442,6 +492,25 @@ header.glass-nav .spark-container {
     margin-left: 0 !important;
   }
 
+  /* --- Mobile (≤768px): Card buy button fix --- */
+  .spark-card #but,
+  #but {
+    margin-left: 0 !important;
+    position: static !important;
+    left: auto !important;
+    width: 100% !important;
+    text-align: center;
+    justify-content: center;
+  }
+  .card-action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .card-action-row > div:first-child {
+    text-align: left;
+  }
+
   #back {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
     gap: 16px !important;
@@ -457,10 +526,27 @@ header.glass-nav .spark-container {
     gap: 28px !important;
     text-align: center !important;
   }
+
+  /* --- Mobile: Footer QR image --- */
+  .footer-qr-img {
+    width: 100% !important;
+    max-width: 200px !important;
+    height: auto !important;
+  }
+  /* legacy fallback selector */
   footer img[src*="qr"] {
     width: 100% !important;
-    max-width: 220px !important;
+    max-width: 200px !important;
     height: auto !important;
+  }
+
+  /* --- Mobile: Footer partner logos --- */
+  .footer-partner-logos {
+    justify-content: center;
+  }
+  .footer-partner-logos img {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 
@@ -520,5 +606,38 @@ header.glass-nav .spark-container {
   .spark-btn-primary, .spark-btn-gold, .spark-btn-outline {
     padding: 8px 14px !important;
     font-size: 0.8rem !important;
+  }
+
+  /* --- Small Mobile: Card buy button full-width --- */
+  .spark-card #but,
+  #but {
+    margin-left: 0 !important;
+    position: static !important;
+    left: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .card-action-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  /* --- Small Mobile: Footer QR image --- */
+  .footer-qr-img {
+    width: 100% !important;
+    max-width: 160px !important;
+    height: auto !important;
+  }
+
+  /* --- Small Mobile: Footer partner logos --- */
+  .footer-partner-logos {
+    justify-content: center;
+    gap: 16px !important;
+  }
+  .footer-partner-logos img {
+    width: 36px !important;
+    height: 36px !important;
   }
 }

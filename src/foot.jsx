@@ -73,7 +73,7 @@ function Foot() {
               display: 'inline-block',
               boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
             }}>
-              <img src={qr} alt="Scan QR Code" style={{ width: '320px', height: '220px', objectFit: 'contain' }} />
+              <img src={qr} alt="Scan QR Code" className="footer-qr-img" />
             </div>
             <p style={{ fontSize: '0.75rem', color: '#000000', marginTop: '6px' }}>
               Scan with camera to order on mobile
@@ -85,7 +85,7 @@ function Foot() {
             <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: '#F59E0B', marginBottom: '14px' }}>
               Associate Partners
             </h4>
-            <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+            <div className="footer-partner-logos">
               <img src={f1} alt="Partner 1" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
               <img src={f2} alt="Partner 2" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
               <img src={f3} alt="Partner 3" style={{ width: '42px', height: '42px', objectFit: 'contain' }} />
